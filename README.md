@@ -15,7 +15,8 @@ A ideia é fazer esboço manualmente e deixar algumas atribuições de frontend 
 Então, que comece novamente esse desafio. 
 
 ## ADRs.
-
+- ADR001
+Esse desafio é de 2023 e o simulador de webhook não está mais ativo, então, vou fazer um também para cadastrar um email e um endpoint para ele fica disparando eventos de forma simulada. 
 ## P.S:
 
 Tenho algumas skills, que tem me auxiliado muito no entendimento de todo código e demanda que chega para mim. Eu utilizei elas para entender me lembrar que o entendimento é meu e as decisões são minhas. Fiquem a vontade para fazer um fork para que possa adaptar para seu estilo de aprendizado. 
