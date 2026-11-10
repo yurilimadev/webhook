@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Simulador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <p style="font-weight: bold; margin:5px;">SIMULADOR DE WEBHOOK</p>
+        <div>
+            <p>Adicione o Endpoint da usa aplicação para poder receber os disparos da simulação.</p>
+        </div>
+        <form action="{{ url_for('response') }}" method="POST">
+            <input type="text" placeholder="Endpoint" name="endpoint">
+            <input type="email" placeholder="Email" name="email">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
