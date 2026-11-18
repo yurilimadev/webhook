@@ -2,11 +2,16 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    position: relative;
+    
+}
+
+body{
+    background-image:url('/static/Gemini_Generated_Image_5e0t8t5e0t8t5e0t.jpeg');
     
 }
 
 .container{
+    background-color:aliceblue;
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -17,9 +22,6 @@
     border-right: 5px solid gray;
     border-bottom: 5px solid gray;
     border-radius:15px;
-    position:absolute;
-    top: 340px;
-    right: 760px;
 }
 
 .container form{
