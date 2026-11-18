@@ -1,7 +1,7 @@
 import requests
 import json
 import time
-from flask import Flask, render_template, url_for, jsonify, request
+from flask import Flask, render_template, url_for, jsonify, request, redirect
 from service.disparo_service import mock_trigger
 from repository.endpoint_repository import EndpointRepository
 
@@ -22,8 +22,10 @@ def cadastrar():
         email = request.form.get('email')
         
         repo.cadastrar(email, endpoint)
-
-        return f"{email} cadastrou {endpoint} com sucesso"
+        repo.enviar_token(email)
+        print(f"{email} cadastrou {endpoint} com sucesso")
+        return redirect(url_for('home')) 
+    
 
 @app.route('/disparo', methods=['GET', 'POST'])
 def disparar():
